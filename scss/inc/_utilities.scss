@@ -1,0 +1,57 @@
+@import 'inc/variables';
+
+/* Cross-site Utility Classes */
+
+.clear {
+	clear:both;
+}
+
+.hidden {
+	display:none !important;
+	visibility:hidden;
+}
+
+.invisible {
+	visibility:hidden;
+}
+
+.ir {
+	display:block;
+	border:0;
+	text-indent:-999em;
+	overflow:hidden;
+	background-color:transparent;
+	background-repeat:no-repeat;
+	text-align:left;
+	direction:ltr;
+	*line-height:0;
+
+	br {
+		display:none;
+	}
+}
+
+nav {
+	ul {
+		margin:0;
+		padding:0;
+
+		li {
+			display:inline-block;
+			float:left;
+		}
+	}
+}
+
+
+/* Clearfix */
+section:before, section:after, .row:before, .row:after, .clearfix:before, .clearfix:after {
+	content:"";
+	display:table;
+}
+section:after, .row:after, .clearfix:after {
+	clear:both;
+}
+section, .row, .clearfix {
+	*zoom:1;
+}

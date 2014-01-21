@@ -1,0 +1,44 @@
+/*==================================================*/
+/*  VARS
+/*==================================================*/
+
+/* Base */
+$font-family-alpha: 'Open Sans', Helvetica, Arial, sans-serif;
+
+/* Colour Palette */
+$black: #000;
+$blue: #42a7ca;
+$dark-slate: #1e2c35;
+$light-blue: #c4e3ee;
+$light-orange: #ffd6c2;
+$light-slate: #c8cdd1;
+$light-teal: #bee1dc;
+$orange: #fa7f36;
+$slate: #50626f;
+$teal: #1fbaa6;
+$white: #fff;
+$dark-grey: #393943;
+$light-grey:#ededed;
+
+
+/* Site Options */
+$gutter-width: 20px; 	/* The spacing between columns within the site structure */
+$max-page-width: 1024px;
+
+
+/* Vendor prefix */
+@mixin vendor($property, $value...){
+    -webkit-#{$property}: $value;
+       -moz-#{$property}: $value;
+        -ms-#{$property}: $value;
+         -o-#{$property}: $value;
+            #{$property}: $value;
+}
+
+/* Text Shadow */
+@mixin text-shadow($property, $value...){
+       -moz-#{$property}: $value;
+        -ms-#{$property}: $value;
+         -o-#{$property}: $value;
+            #{$property}: $value;
+}

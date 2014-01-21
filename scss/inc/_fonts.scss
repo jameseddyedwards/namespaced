@@ -1,0 +1,80 @@
+@import 'inc/variables';
+
+/* =============================================================================
+   Font Face Fonts
+   ========================================================================== */
+
+/*
+@font-face {
+    font-family: 'chunkfive';
+    src: url('../font/chunkfive/regular.eot');
+    src: url('../font/chunkfive/regular.eot?#iefix') format('embedded-opentype'),
+         url('../font/chunkfive/regular.ttf') format('truetype'),
+         url('../font/chunkfive/regular.svg#chunkfive') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+*/
+
+/* =============================================================================
+   Fonts
+   ========================================================================== */
+
+/* Headings */
+h1, h2, h3, h4, h5, h6 {
+	color:$light-grey;
+	font-weight:normal;
+	font-family:$font-family-alpha;
+	text-shadow:0px 2px 1px black;
+}
+
+h1 {
+	font-size:50px;
+	font-weight:100;
+	line-height:50px;
+}
+
+h2 {
+	font-size:20px;
+	line-height:20px;
+}
+
+h3 {
+	font-size:20px;
+	line-height:20px;
+}
+
+h4 {
+	font-size:20px;
+	line-height:20px;
+}
+
+h5 {
+	font-size:20px;
+	line-height:20px;
+}
+
+h6 {
+	font-size:20px;
+	line-height:20px;
+	margin:15px 0 10px;
+}
+
+a {
+	color: $white;
+
+	&:hover {
+		color:$light-orange;
+	}
+
+	&:visited {
+		color:$orange;
+	}
+}
+
+
+/* The <article> tag is used across the site to display copy content */
+article {
+
+}
+
