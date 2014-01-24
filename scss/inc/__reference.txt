@@ -1,0 +1,21 @@
+/* =============================================================================
+   Animations
+   ========================================================================== */
+
+/* Hover fade animation - Color */
+@include vendor(transition, color 300ms ease-in);
+
+/* Hover fade animation - BG Color */
+@include vendor(transition, all 300ms ease-in);
+
+/* Hover fade animation - Border Color */
+@include vendor(transition, border 300ms ease-in); /* Hover fade animation */
+
+
+
+/* =============================================================================
+   CSS3
+   ========================================================================== */
+
+/* Border Radius */
+@include vendor(border-radius, 3px);
