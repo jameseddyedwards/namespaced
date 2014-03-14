@@ -21,6 +21,8 @@
  */
 require_once dirname( __FILE__ ) . '/class/tgm-plugin-activation.php';
 
+$pluginDirectory = get_stylesheet_directory() . "/plugins/lib/";
+
 /**
  * Register the required plugins for this theme.
  *
@@ -61,6 +63,18 @@ if (!function_exists('register_required_plugins')) {
 				'required' 	=> true,
 			),
 
+			// Advanced Custom Fields: Gallery
+			array(
+				'name'     				=> 'Advanced Custom Fields: Gallery', // The plugin name
+				'slug'     				=> 'acf-gallery', // The plugin slug (typically the folder name)
+				'source'   				=> $pluginDirectory . 'vimeography-bugsauce.zip', // The plugin source
+				'required' 				=> false, // If false, the plugin is only 'recommended' instead of required
+				'version' 				=> '', // E.g. 1.0.0. If set, the active plugin must be this version or higher, otherwise a notice is presented
+				'force_activation' 		=> false, // If true, plugin is activated upon theme activation and cannot be deactivated until theme switch
+				'force_deactivation' 	=> false, // If true, plugin is deactivated upon theme switch, useful for theme-specific plugins
+				'external_url' 			=> '', // If set, overrides default API URL and points to an external URL
+			),
+
 			// WordPress SEO by Yoast
 			array(
 				'name' 		=> 'WordPress SEO by Yoast',
@@ -93,7 +107,19 @@ if (!function_exists('register_required_plugins')) {
 			array(
 				'name'     				=> 'Vimeography: Bug Sauce Theme', // The plugin name
 				'slug'     				=> 'vimeography-bugsauce', // The plugin slug (typically the folder name)
-				'source'   				=> get_stylesheet_directory() . '/lib/plugins/vimeography-bugsauce.zip', // The plugin source
+				'source'   				=> $pluginDirectory . 'vimeography-bugsauce.zip', // The plugin source
+				'required' 				=> false, // If false, the plugin is only 'recommended' instead of required
+				'version' 				=> '', // E.g. 1.0.0. If set, the active plugin must be this version or higher, otherwise a notice is presented
+				'force_activation' 		=> false, // If true, plugin is activated upon theme activation and cannot be deactivated until theme switch
+				'force_deactivation' 	=> false, // If true, plugin is deactivated upon theme switch, useful for theme-specific plugins
+				'external_url' 			=> '', // If set, overrides default API URL and points to an external URL
+			),
+
+			// Vimeography: Ballistic
+			array(
+				'name'     				=> 'Vimeography: Ballistic', // The plugin name
+				'slug'     				=> 'vimeography-ballistic', // The plugin slug (typically the folder name)
+				'source'   				=> $pluginDirectory . 'vimeography-bugsauce.zip', // The plugin source
 				'required' 				=> false, // If false, the plugin is only 'recommended' instead of required
 				'version' 				=> '', // E.g. 1.0.0. If set, the active plugin must be this version or higher, otherwise a notice is presented
 				'force_activation' 		=> false, // If true, plugin is activated upon theme activation and cannot be deactivated until theme switch

@@ -5,12 +5,12 @@ if (!function_exists('create_post_types')) {
 
 	function create_post_types() {
 
-		// News
-		register_post_type('news',
+		// Team
+		register_post_type('team',
 			array(
 				'labels' => array(
-					'name' => __( 'News' ),
-					'singular_name' => __('News Article')
+					'name' => __( 'Team' ),
+					'singular_name' => __('Team Member')
 				),
 				'public' => true,
 				'has_archive' => true,
@@ -25,23 +25,6 @@ if (!function_exists('create_post_types')) {
 					'trackbacks',
 					'custom-fields',
 					'comments',
-					'revisions'
-				)
-			)
-		);
-
-		// Adverts
-		register_post_type('advert',
-			array(
-				'labels' => array(
-					'name' => __( 'Adverts' ),
-					'singular_name' => __('Advert')
-				),
-				'public' => true,
-				'has_archive' => true,
-				'menu_position' => 5,
-				'supports' => array(
-					'title',
 					'revisions'
 				)
 			)
